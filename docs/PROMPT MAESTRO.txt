@@ -1,0 +1,930 @@
+PROMPT MAESTRO – DESARROLLO DE UNA APLICACIÓN WEB PROFESIONAL PARA RESTAURANTES, CAFETERÍAS, BARES Y HELADERÍAS
+
+Quiero que actúes como un Arquitecto de Software Senior, Desarrollador Full Stack especializado en Python, Diseñador UX/UI, Especialista en Bases de Datos, DevOps y Experto en Seguridad Informática, con amplia experiencia desarrollando aplicaciones web comerciales.
+
+Tu objetivo es diseñar y desarrollar una aplicación web moderna, escalable, profesional y lista para producción, destinada a restaurantes, cafeterías, bares, heladerías y cualquier negocio gastronómico.
+
+No quiero únicamente ejemplos de código. Quiero construir un producto comercial real, con una arquitectura sólida, preparada para crecer y utilizarse en múltiples negocios.
+
+Antes de escribir cualquier línea de código, analiza completamente el proyecto, propone la mejor arquitectura posible y justifica cada decisión técnica.
+
+Todo el proyecto debe desarrollarse por módulos, avanzando paso a paso, asegurando que cada módulo quede completamente funcional antes de comenzar el siguiente.
+
+OBJETIVO GENERAL
+
+Crear un sistema web que reemplace completamente el menú físico y permita administrar toda la interacción entre clientes y el negocio.
+
+El sistema debe permitir:
+
+Mostrar el menú digital.
+Mostrar promociones.
+Mostrar menú del día.
+Mostrar platos recomendados.
+Permitir pedidos desde mesa.
+Permitir Take Away.
+Permitir Delivery.
+Permitir reservas.
+Administrar pedidos.
+Administrar reservas.
+Gestionar el menú.
+Gestionar promociones.
+Gestionar múltiples sucursales.
+Generar estadísticas.
+Funcionar perfectamente desde celulares, tablets y computadoras.
+EL PROYECTO DEBE SER MULTIEMPRESA (SAAS)
+
+La aplicación no debe estar diseñada para un único restaurante.
+
+Debe funcionar como un sistema SaaS donde cualquier restaurante pueda registrarse y utilizar la plataforma.
+
+Cada negocio tendrá:
+
+su propio menú
+sus propias categorías
+sus propias mesas
+sus propias reservas
+sus propios empleados
+sus propios pedidos
+sus propias promociones
+sus propios clientes
+sus propios horarios
+sus propias configuraciones
+
+Los datos de cada empresa deben estar completamente aislados.
+
+Debe ser posible que cientos o miles de restaurantes utilicen el mismo sistema sin interferir entre ellos.
+
+TECNOLOGÍAS OBLIGATORIAS
+
+Todo el proyecto debe desarrollarse utilizando Python.
+
+No quiero backend en Node.js.
+
+No quiero PHP.
+
+No quiero Laravel.
+
+No quiero Ruby.
+
+No quiero Java.
+
+Todo debe estar basado en Python.
+
+Backend
+
+Utilizar:
+
+Python 3.13+
+
+Framework:
+
+Flask (preferentemente)
+
+Si existe una razón técnica importante puede utilizar Django, pero justificarlo.
+
+La arquitectura debe ser modular.
+
+Debe utilizar Blueprints.
+
+Debe seguir principios SOLID.
+
+Debe utilizar Clean Architecture.
+
+Debe estar preparado para crecer.
+
+Frontend
+
+Utilizar únicamente:
+
+HTML5
+
+CSS3
+
+JavaScript ES6+
+
+Bootstrap 5 o Tailwind CSS
+
+Jinja2
+
+No utilizar React.
+
+No utilizar Angular.
+
+No utilizar Vue.
+
+Quiero una aplicación liviana y rápida.
+
+Base de datos
+
+Preparar el proyecto para funcionar con:
+
+SQLite (desarrollo)
+
+PostgreSQL (producción)
+
+MySQL (opcional)
+
+Debe ser muy sencillo cambiar entre una base y otra.
+
+Utilizar SQLAlchemy.
+
+Migraciones mediante Flask-Migrate.
+
+Autenticación
+
+Implementar:
+
+JWT
+
+Login
+
+Registro
+
+Recuperación de contraseña
+
+Roles de usuario.
+
+ROLES DEL SISTEMA
+
+Debe existir un sistema completo de permisos.
+
+Administrador General
+
+Administrador del Restaurante
+
+Gerente
+
+Mozo
+
+Cajero
+
+Cocinero
+
+Cliente
+
+Cada uno con permisos diferentes.
+
+DISEÑO
+
+Quiero un diseño moderno.
+
+Inspirado en:
+
+Starbucks
+
+PedidosYa
+
+Uber Eats
+
+McDonald's
+
+Rappi
+
+Apple
+
+Minimalista.
+
+Profesional.
+
+Elegante.
+
+Responsive.
+
+Con animaciones suaves.
+
+Modo Claro.
+
+Modo Oscuro.
+
+Accesible.
+
+Muy intuitivo.
+
+PÁGINA PRINCIPAL
+
+Debe incluir:
+
+Banner principal
+
+Carrusel automático.
+
+Promociones.
+
+Novedades.
+
+Eventos.
+
+Productos recomendados
+
+Tarjetas con:
+
+Imagen
+
+Nombre
+
+Descripción
+
+Precio
+
+Botón Ver Más
+
+Agregar al pedido
+
+Promociones
+
+Mostrar:
+
+2x1
+
+Happy Hour
+
+Descuentos
+
+Combos
+
+Menú Ejecutivo
+
+Ofertas especiales
+
+Categorías
+
+Mostrar tarjetas con iconos.
+
+Ejemplo
+
+🍔 Hamburguesas
+
+🍕 Pizzas
+
+🍝 Pastas
+
+🥩 Parrilla
+
+🥗 Ensaladas
+
+🌱 Vegetarianos
+
+🌿 Veganos
+
+🍣 Sushi
+
+🍨 Helados
+
+🍰 Postres
+
+☕
+
+Cafetería
+
+🍺 Cervezas
+
+🍷 Vinos
+
+🥤 Bebidas
+
+Menú del día
+
+Mostrar:
+
+Entrada
+
+Principal
+
+Bebida
+
+Postre
+
+Precio
+
+Opciones Vegetarianas
+
+Mostrar una sección exclusiva.
+
+Información del local
+
+Nombre
+
+Dirección
+
+Google Maps
+
+Horarios
+
+WhatsApp
+
+Instagram
+
+Facebook
+
+TikTok
+
+Correo electrónico
+
+Teléfono
+
+Métodos de pago
+
+Mostrar iconos de:
+
+Visa
+
+MasterCard
+
+American Express
+
+Mercado Pago
+
+Transferencia
+
+QR
+
+Débito
+
+Crédito
+
+Efectivo
+
+MENÚ
+
+Cada producto debe mostrar
+
+Imagen
+
+Nombre
+
+Descripción
+
+Precio
+
+Ingredientes
+
+Alérgenos
+
+Picante
+
+Sin TACC
+
+Vegano
+
+Vegetariano
+
+Stock
+
+Tiempo estimado
+
+Agregar al carrito
+
+Favoritos
+
+Compartir
+
+BUSCADOR
+
+Buscador inteligente.
+
+Debe buscar por:
+
+Nombre
+
+Categoría
+
+Ingrediente
+
+Precio
+
+FILTROS
+
+Precio
+
+Vegano
+
+Vegetariano
+
+Sin TACC
+
+Picante
+
+Más vendidos
+
+Recomendados
+
+Nuevos
+
+CARRITO
+
+Debe permitir:
+
+Modificar cantidades
+
+Eliminar productos
+
+Agregar observaciones
+
+Aplicar cupones
+
+Calcular subtotal
+
+Propina
+
+Costo de envío
+
+Impuestos
+
+Total
+
+PEDIDOS
+
+El sistema debe soportar tres tipos.
+
+Pedido desde Mesa
+
+Escaneo mediante QR.
+
+Formulario:
+
+Mesa
+
+Nombre
+
+Observaciones
+
+Productos
+
+Enviar pedido automáticamente al panel del restaurante.
+
+Take Away
+
+Formulario
+
+Nombre
+
+Teléfono
+
+Hora estimada
+
+Observaciones
+
+Delivery
+
+Formulario
+
+Nombre
+
+Dirección
+
+Ciudad
+
+Piso
+
+Departamento
+
+Referencia
+
+Teléfono
+
+Forma de pago
+
+Observaciones
+
+Cada pedido debe generar:
+
+Número
+
+Fecha
+
+Hora
+
+Estado
+
+Estados
+
+Pendiente
+
+Aceptado
+
+Preparando
+
+Listo
+
+En camino
+
+Entregado
+
+Cancelado
+
+RESERVAS
+
+Formulario
+
+Nombre
+
+Apellido
+
+Teléfono
+
+Correo
+
+Cantidad de personas
+
+Fecha
+
+Hora
+
+Ocasión especial
+
+Observaciones
+
+Al enviar la reserva:
+
+Debe llegar automáticamente al restaurante.
+
+Debe poder aceptarse o rechazarse.
+
+Debe enviarse una confirmación al cliente.
+
+PANEL ADMINISTRATIVO
+
+Debe existir un panel moderno.
+
+Con Dashboard.
+
+Gestión del menú
+
+Crear productos
+
+Editar productos
+
+Eliminar productos
+
+Cambiar precios
+
+Subir imágenes
+
+Controlar stock
+
+Organizar categorías
+
+Gestión de pedidos
+
+Pedidos en tiempo real
+
+Aceptar
+
+Cancelar
+
+Preparar
+
+Listo
+
+Entregado
+
+Imprimir comandas
+
+Gestión de reservas
+
+Aceptar
+
+Modificar
+
+Cancelar
+
+Agenda
+
+Calendario
+
+Gestión de promociones
+
+Crear promociones
+
+Programarlas
+
+Desactivarlas automáticamente
+
+Gestión de empleados
+
+Crear usuarios
+
+Asignar roles
+
+Cambiar permisos
+
+Estadísticas
+
+Ventas
+
+Pedidos
+
+Reservas
+
+Clientes
+
+Productos más vendidos
+
+Ingresos diarios
+
+Ingresos mensuales
+
+Clientes frecuentes
+
+Horas pico
+
+Gráficos interactivos
+
+NOTIFICACIONES
+
+Enviar automáticamente
+
+WhatsApp
+
+Correo electrónico
+
+SMS (opcional)
+
+Push Notifications
+
+INTEGRACIONES
+
+Google Maps
+
+Mercado Pago
+
+Stripe (opcional)
+
+Google Calendar
+
+WhatsApp
+
+Cloudinary
+
+PANEL DEL CLIENTE
+
+Cada cliente podrá:
+
+Crear cuenta
+
+Iniciar sesión
+
+Guardar direcciones
+
+Guardar favoritos
+
+Consultar historial
+
+Repetir pedidos
+
+Cancelar pedidos
+
+Modificar datos
+
+PANEL DE COCINA (KDS)
+
+Crear un Kitchen Display System.
+
+Mostrar pedidos.
+
+Tiempo transcurrido.
+
+Prioridades.
+
+Estado.
+
+Pantalla optimizada para cocina.
+
+PANEL DEL MOZO
+
+Ver mesas.
+
+Abrir mesa.
+
+Cerrar mesa.
+
+Agregar productos.
+
+Enviar comandas.
+
+Dividir cuenta.
+
+Cobrar.
+
+PANEL DEL CAJERO
+
+Cobrar.
+
+Emitir comprobantes.
+
+Aplicar descuentos.
+
+Registrar pagos.
+
+DASHBOARD
+
+Gráficos interactivos.
+
+Ventas.
+
+Clientes.
+
+Reservas.
+
+Pedidos.
+
+Facturación.
+
+CÓDIGOS QR
+
+Cada mesa debe tener su propio QR.
+
+Cada QR abrirá automáticamente:
+
+El menú.
+
+La mesa correspondiente.
+
+Sin necesidad de registro.
+
+MULTIIDIOMA
+
+Preparar el sistema para:
+
+Español
+
+Inglés
+
+Portugués
+
+MODO OFFLINE
+
+Si es posible.
+
+Permitir cachear el menú.
+
+SEGURIDAD
+
+Implementar:
+
+JWT
+
+CSRF
+
+XSS
+
+Protección SQL Injection
+
+Hash de contraseñas
+
+Rate Limiting
+
+Logs
+
+Backups
+
+Variables de entorno
+
+HTTPS
+
+ESTRUCTURA DEL PROYECTO
+
+Generar una estructura profesional.
+
+Por ejemplo:
+
+restaurant_saas/
+
+app/
+routes/
+models/
+controllers/
+services/
+repositories/
+forms/
+templates/
+static/
+css/
+js/
+images/
+uploads/
+utils/
+middleware/
+
+migrations/
+
+tests/
+
+instance/
+
+config.py
+
+run.py
+
+requirements.txt
+
+README.md
+
+.env
+
+.gitignore
+HOSTING GRATUITO
+
+La aplicación debe poder desplegarse completamente en plataformas gratuitas o con plan Free.
+
+Debe explicar paso a paso cómo hacerlo.
+
+Ejemplos:
+
+PythonAnywhere
+
+Render
+
+Railway
+
+Koyeb
+
+Fly.io
+
+GitHub
+
+Debe incluir instrucciones para:
+
+Subir el proyecto.
+
+Crear la base de datos.
+
+Configurar variables.
+
+Ejecutar migraciones.
+
+Actualizar la aplicación.
+
+DOMINIO GRATUITO
+
+Durante el desarrollo debe funcionar con dominios gratuitos como:
+
+.onrender.com
+.pythonanywhere.com
+.fly.dev
+.koyeb.app
+
+Además, debe explicar cómo conectar posteriormente un dominio personalizado cuando el proyecto esté listo para producción.
+
+CALIDAD DEL CÓDIGO
+
+Todo el código debe ser:
+
+Profesional.
+
+Modular.
+
+Escalable.
+
+Bien documentado.
+
+Comentado.
+
+Seguro.
+
+Optimizado.
+
+Reutilizable.
+
+Fácil de mantener.
+
+Listo para producción.
+
+ENTREGABLES ESPERADOS
+
+Antes de comenzar a programar, desarrolla la documentación completa del proyecto:
+
+Análisis de requerimientos.
+Arquitectura general del sistema.
+Diagrama de componentes.
+Flujo de usuarios.
+Wireframes de todas las pantallas.
+Diseño UX/UI.
+Sistema de diseño (Design System).
+Modelo entidad-relación (ERD).
+Esquema completo de la base de datos.
+Definición de todas las APIs REST.
+Sistema de autenticación y permisos.
+Plan de desarrollo por fases (MVP → versión comercial).
+Estrategia de pruebas (unitarias, integración y funcionales).
+Plan de despliegue y mantenimiento.
+Manual de instalación local y en producción.
+Manual de usuario (cliente, empleado y administrador).
+Documentación técnica del proyecto.
+METODOLOGÍA DE DESARROLLO
+
+No generes todo el código de una sola vez.
+
+Trabaja por etapas.
+
+Cada etapa debe quedar completamente terminada, documentada y probada antes de pasar a la siguiente.
+
+En cada fase:
+
+Explica qué se va a desarrollar.
+Justifica las decisiones técnicas.
+Genera el código completo y funcional.
+Indica cómo probarlo.
+Espera la aprobación antes de continuar.
+
+Quiero construir un software profesional, mantenible y comercializable, siguiendo las mejores prácticas de ingeniería de software y preparado para escalar a miles de restaurantes, cafeterías, bares y heladerías.

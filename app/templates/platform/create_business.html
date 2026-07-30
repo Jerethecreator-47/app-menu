@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Crear negocio | GastroFlow{% endblock %}
+{% block content %}
+  <a class="text-decoration-none" href="{{ url_for('platform.dashboard') }}">← Volver al panel</a>
+  <section class="card shadow-sm mt-3">
+    <div class="card-body p-4 p-md-5">
+      <h1 class="h3">Crear negocio</h1>
+      <p class="text-secondary">Crea el negocio de referencia y su primer administrador. No habilita aún el registro público SaaS.</p>
+      <form method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <div class="row g-3">
+          <div class="col-md-7"><label class="form-label" for="{{ form.business_name.id }}">{{ form.business_name.label.text }}</label>{{ form.business_name(class_="form-control", placeholder="Ej.: Café Central") }}{% for error in form.business_name.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}</div>
+          <div class="col-md-5"><label class="form-label" for="{{ form.slug.id }}">{{ form.slug.label.text }}</label>{{ form.slug(class_="form-control", placeholder="cafe-central") }}<div class="form-text">Se usará más adelante en la URL pública.</div>{% for error in form.slug.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}</div>
+          <div class="col-md-6"><label class="form-label" for="{{ form.admin_name.id }}">{{ form.admin_name.label.text }}</label>{{ form.admin_name(class_="form-control") }}{% for error in form.admin_name.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}</div>
+          <div class="col-md-6"><label class="form-label" for="{{ form.admin_email.id }}">{{ form.admin_email.label.text }}</label>{{ form.admin_email(class_="form-control", autocomplete="email") }}{% for error in form.admin_email.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}</div>
+          <div class="col-md-6"><label class="form-label" for="{{ form.password.id }}">{{ form.password.label.text }}</label>{{ form.password(class_="form-control", autocomplete="new-password") }}<div class="form-text">Mínimo 12 caracteres.</div>{% for error in form.password.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}</div>
+        </div>
+        <div class="mt-4">{{ form.submit(class_="btn btn-primary") }}</div>
+      </form>
+    </div>
+  </section>
+{% endblock %}

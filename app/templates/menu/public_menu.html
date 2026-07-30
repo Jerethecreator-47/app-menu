@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ tenant.name }} | GastroFlow{% endblock %}
+{% block content %}
+  <header class="text-center mb-5"><p class="text-uppercase text-primary fw-semibold small">Menú digital</p><h1>{{ tenant.name }}</h1><p class="text-secondary">Elegí lo que más te gusta.</p></header>
+  {% for category in categories %}
+    {% set category_products = products|selectattr('category_id', 'equalto', category.id)|list %}
+    {% if category_products %}<section class="mb-5"><h2 class="h3 mb-3">{{ category.name }}</h2><div class="row g-3">{% for product in category_products %}<div class="col-md-6 col-lg-4"><article class="card h-100 shadow-sm">{% if product.image_url %}<img class="card-img-top product-image" src="{{ product.image_url }}" alt="{{ product.name }}">{% endif %}<div class="card-body d-flex flex-column"><h3 class="h5">{{ product.name }}</h3><p class="text-secondary small flex-grow-1">{{ product.description }}</p><div class="d-flex flex-wrap gap-1 mb-3">{% if product.is_vegan %}<span class="badge text-bg-success">Vegano</span>{% elif product.is_vegetarian %}<span class="badge text-bg-success">Vegetariano</span>{% endif %}{% if product.is_gluten_free %}<span class="badge text-bg-info">Sin TACC</span>{% endif %}</div><strong class="fs-5">{{ product.price_display }}</strong></div></article></div>{% endfor %}</div></section>{% endif %}
+  {% endfor %}
+  {% if not products %}<p class="text-center text-secondary">El menú estará disponible muy pronto.</p>{% endif %}
+{% endblock %}

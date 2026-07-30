@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+instance/*.sqlite
+instance/*.db
+migrations/versions/*.pyc
+.pytest_cache/

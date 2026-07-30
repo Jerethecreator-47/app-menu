@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Plataforma | GastroFlow{% endblock %}
+{% block content %}
+  <p class="text-uppercase text-primary fw-semibold small mb-2">Administración de plataforma</p>
+  <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+    <h1 class="mb-0">Panel general</h1>
+    <a class="btn btn-primary" href="{{ url_for('platform.create_business') }}">Crear negocio</a>
+  </div>
+  <div class="row g-3">
+    <div class="col-md-6"><article class="card shadow-sm"><div class="card-body"><p class="text-secondary mb-1">Negocios registrados</p><p class="display-6 mb-0">{{ tenant_count }}</p></div></article></div>
+    <div class="col-md-6"><article class="card shadow-sm"><div class="card-body"><p class="text-secondary mb-1">Usuarios registrados</p><p class="display-6 mb-0">{{ user_count }}</p></div></article></div>
+  </div>
+  <section class="card shadow-sm mt-4">
+    <div class="card-body p-0">
+      <div class="p-3 border-bottom"><h2 class="h5 mb-0">Negocios</h2></div>
+      {% if tenants %}
+        <div class="table-responsive"><table class="table table-hover mb-0"><thead><tr><th>Nombre</th><th>Identificador</th><th>Estado</th><th>Usuarios</th></tr></thead><tbody>
+          {% for tenant in tenants %}<tr><td>{{ tenant.name }}</td><td><code>{{ tenant.slug }}</code></td><td>{% if tenant.is_active %}<span class="badge text-bg-success">Activo</span>{% else %}<span class="badge text-bg-secondary">Inactivo</span>{% endif %}</td><td>{{ tenant.users|length }}</td></tr>{% endfor %}
+        </tbody></table></div>
+      {% else %}<p class="text-secondary p-3 mb-0">Todavía no hay negocios creados.</p>{% endif %}
+    </div>
+  </section>
+{% endblock %}

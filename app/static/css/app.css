@@ -1,0 +1,4 @@
+body { min-height: 100vh; }
+.login-card { max-width: 440px; }
+.form-card { max-width: 560px; }
+.product-image { height: 190px; object-fit: cover; }

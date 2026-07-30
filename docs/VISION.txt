@@ -1,0 +1,240 @@
+GASTROFLOW
+La plataforma inteligente que transforma cualquier restaurante en un negocio digital.
+No vendemos un menú digital.
+Vendemos una nueva forma de gestionar un restaurante.
+GastroFlow nace para resolver un problema que millones de negocios gastronómicos tienen todos los días:
+Menús físicos desactualizados.
+Pedidos mal tomados.
+Mozos saturados.
+Reservas por WhatsApp que se pierden.
+Errores en cocina.
+Poco control sobre las ventas.
+Nula información sobre los clientes.
+Todo eso desaparece.
+Imaginemos la experiencia
+Un cliente entra al restaurante.
+No necesita pedir un menú.
+Simplemente escanea un QR.
+En segundos aparece una aplicación elegante, rápida y profesional.
+Ve:
+Los platos recomendados.
+El menú del día.
+Promociones.
+Combos.
+Productos vegetarianos.
+Productos veganos.
+Bebidas.
+Postres.
+Helados.
+Cafetería.
+Todo con fotografías de alta calidad.
+Puede buscar cualquier producto.
+Puede filtrar.
+Puede agregar favoritos.
+Puede armar su pedido.
+Todo desde su teléfono.
+Sin descargar ninguna aplicación.
+El pedido
+El cliente toca:
+"Pedir desde mi mesa"
+La aplicación ya sabe en qué mesa está porque el QR es único.
+Selecciona sus productos.
+Agrega observaciones.
+Envía.
+En menos de un segundo:
+El pedido aparece automáticamente en cocina.
+El mozo recibe una notificación.
+La caja queda informada.
+No hubo errores.
+No hubo papeles.
+No hubo gritos.
+No hubo pérdidas de tiempo.
+Delivery
+Otro cliente está en su casa.
+Abre el mismo sitio.
+Selecciona Delivery.
+Completa:
+Dirección.
+Teléfono.
+Forma de pago.
+Observaciones.
+Confirma.
+El restaurante recibe el pedido inmediatamente.
+Take Away
+Otro cliente quiere retirar.
+Hace el pedido.
+Selecciona la hora.
+Paga.
+Llega.
+Retira.
+Sin filas.
+Reservas
+Una pareja quiere cenar.
+Entra.
+Selecciona:
+Fecha.
+Hora.
+Cantidad de personas.
+Ocasión especial.
+La reserva llega al restaurante.
+El encargado la acepta.
+Automáticamente el cliente recibe la confirmación.
+Para el restaurante
+Todo ocurre desde un único panel.
+No necesita diez aplicaciones diferentes.
+Desde una sola pantalla administra:
+Pedidos.
+Reservas.
+Productos.
+Precios.
+Stock.
+Promociones.
+Empleados.
+Clientes.
+Ventas.
+Estadísticas.
+Todo en tiempo real.
+Dashboard
+El dueño abre la plataforma.
+Ve inmediatamente:
+Ventas del día.
+Ventas del mes.
+Producto más vendido.
+Mesa que más consume.
+Clientes frecuentes.
+Horas pico.
+Facturación.
+Pedidos pendientes.
+Reservas.
+Todo mediante gráficos modernos.
+Cocina
+La cocina tiene su propia pantalla.
+No llegan papeles.
+No llegan comandas escritas a mano.
+Solo aparece:
+Mesa 12
+2 Hamburguesas
+1 Ensalada
+Sin cebolla
+Prioridad Alta
+Cronómetro.
+Cuando termina:
+Presiona
+"Pedido listo"
+El mozo recibe la notificación.
+Mozos
+Cada mozo posee su cuenta.
+Ve únicamente:
+Sus mesas.
+Sus pedidos.
+Sus clientes.
+Puede cobrar.
+Puede dividir cuentas.
+Puede cerrar mesas.
+Caja
+La caja recibe automáticamente:
+Pedidos.
+Pagos.
+Descuentos.
+Propinas.
+Facturación.
+Administración
+El administrador puede:
+Crear nuevos productos.
+Modificar precios.
+Agregar promociones.
+Ocultar productos sin stock.
+Cambiar horarios.
+Gestionar empleados.
+Todo desde cualquier computadora.
+El cliente vuelve
+La aplicación recuerda:
+Sus pedidos favoritos.
+Sus direcciones.
+Sus alergias.
+Sus preferencias.
+Puede repetir un pedido con un solo botón.
+Ahora pensemos más grande
+No estamos construyendo un sistema para un restaurante.
+Estamos construyendo una plataforma.
+Mañana pueden existir:
+500 restaurantes.
+5.000 restaurantes.
+50.000 restaurantes.
+Todos utilizando la misma infraestructura.
+Cada uno con:
+Su dominio.
+Su menú.
+Sus empleados.
+Sus clientes.
+Sus estadísticas.
+Su identidad visual.
+Todo aislado.
+Todo seguro.
+El modelo de negocio
+El verdadero producto no es el software.
+El verdadero producto es el servicio.
+Cada restaurante paga una suscripción mensual.
+Por ejemplo:
+Plan Básico
+Plan Pro
+Plan Premium
+El costo de mantener un cliente es muy bajo.
+Pero el ingreso es recurrente.
+Cada nuevo restaurante aumenta el valor de la plataforma.
+No hay que volver a desarrollar el sistema.
+Simplemente crear una nueva cuenta.
+Escalabilidad
+Hoy:
+Menú digital.
+Mañana:
+Pedidos.
+Después:
+Reservas.
+Luego:
+Caja.
+Luego:
+Facturación.
+Luego:
+Fidelización.
+Luego:
+Aplicación móvil.
+Luego:
+Inteligencia Artificial.
+Luego:
+Análisis predictivo.
+Luego:
+Control de stock.
+Luego:
+Compras automáticas.
+Luego:
+Integración con proveedores.
+Luego:
+Pantallas de cocina.
+Luego:
+Sucursales.
+Luego:
+Franquicias.
+La plataforma nunca deja de crecer.
+Tecnología
+Backend completamente desarrollado en Python.
+Arquitectura modular.
+Código profesional.
+Escalable.
+Seguro.
+Preparado para producción.
+Desplegado en la nube.
+Actualizable sin detener el servicio.
+Nuestra misión
+Digitalizar la gastronomía.
+Reducir errores.
+Ahorrar tiempo.
+Aumentar ventas.
+Mejorar la experiencia del cliente.
+Dar herramientas modernas a pequeños y grandes negocios.
+Nuestra visión
+Convertirnos en la plataforma gastronómica de referencia en Latinoamérica, permitiendo que cualquier restaurante, cafetería, bar o heladería gestione su operación desde un único sistema inteligente, accesible y escalable.
+El objetivo final
+GastroFlow no es un proyecto para aprobar un curso ni una simple aplicación web. Es una empresa tecnológica en construcción.
+Cada línea de código representa un paso hacia un producto que puede ser utilizado por miles de negocios, generar ingresos recurrentes y evolucionar constantemente con nuevas funcionalidades.
+El propósito no es solo crear software: es construir una plataforma capaz de transformar la forma en que la gastronomía gestiona sus operaciones y se relaciona con sus clientes. Ese es el verdadero objetivo que guiará cada decisión de diseño, desarrollo y crecimiento.

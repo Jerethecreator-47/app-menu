@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Administración | GastroFlow{% endblock %}
+{% block content %}
+  <p class="text-uppercase text-primary fw-semibold small mb-2">Panel de administración</p>
+  <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+    <div><h1>{{ tenant.name }}</h1><p class="text-secondary mb-0">Administrá el catálogo que se mostrará en el menú digital.</p></div>
+    <a class="btn btn-primary" href="{{ url_for('admin.catalog') }}">Gestionar menú</a>
+  </div>
+  <div class="row g-3 mt-2">
+    <div class="col-md-6"><article class="card shadow-sm"><div class="card-body"><p class="text-secondary mb-1">Categorías</p><p class="display-6 mb-0">{{ category_count }}</p></div></article></div>
+    <div class="col-md-6"><article class="card shadow-sm"><div class="card-body"><p class="text-secondary mb-1">Productos</p><p class="display-6 mb-0">{{ product_count }}</p></div></article></div>
+  </div>
+{% endblock %}
