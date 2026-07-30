@@ -12,6 +12,15 @@ DEFAULT_ROLES = {
     "waiter": "Mozo",
     "cashier": "Cajero",
     "cook": "Cocinero",
+    ORDER_STATUS_PENDING = "pending"
+ORDER_STATUS_PREPARING = "preparing"
+ORDER_STATUS_READY = "ready"
+ORDER_STATUS_COMPLETED = "completed"
+ORDER_STATUS_CANCELLED = "cancelled"
+
+ORDER_TYPE_DELIVERY = "delivery"
+ORDER_TYPE_TAKEAWAY = "takeaway"
+ORDER_TYPE_TABLE = "table"
 }
 
 user_roles = db.Table(
@@ -37,6 +46,12 @@ class Tenant(TimestampMixin, db.Model):
     categories = db.relationship("Category", back_populates="tenant", lazy="select", cascade="all, delete-orphan")
     products = db.relationship("Product", back_populates="tenant", lazy="select", cascade="all, delete-orphan")
 
+    orders = db.relationship(
+    "Order",
+    back_populates="tenant",
+    lazy="select",
+    cascade="all, delete-orphan",
+)
 
 class Role(db.Model):
     __tablename__ = "roles"
