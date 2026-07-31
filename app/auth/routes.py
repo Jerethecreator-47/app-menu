@@ -19,7 +19,7 @@ def login():
         if user and user.is_active and user.check_password(form.password.data):
             login_user(user)
             destination = request.args.get("next")
-            if destination and destination.startswith("/"):
+           if destination and destination.startswith("/") and not destination.startswith("//"):
                 return redirect(destination)
             endpoint = "platform.dashboard" if user.is_platform_admin else "admin.dashboard"
             return redirect(url_for(endpoint))
