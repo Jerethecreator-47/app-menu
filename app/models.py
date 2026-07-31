@@ -59,6 +59,7 @@ class Category(TimestampMixin, db.Model):
 
 class Product(TimestampMixin, db.Model):
     __tablename__ = "products"
+    __table_args__ = (db.UniqueConstraint("tenant_id", "name", name="uq_products_tenant_name"),)
     id = db.Column(db.Integer, primary_key=True)
     tenant_id = db.Column(db.Integer, db.ForeignKey("tenants.id"), nullable=False, index=True)
     category_id = db.Column(db.Integer, db.ForeignKey("categories.id"), nullable=False, index=True)
