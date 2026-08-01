@@ -12,7 +12,10 @@ DEFAULT_ROLES = {
     "waiter": "Mozo",
     "cashier": "Cajero",
     "cook": "Cocinero",
-    ORDER_STATUS_PENDING = "pending"
+}
+
+# Constantes para la futura Fase 2.2 (Pedidos) - todavía no se usan.
+ORDER_STATUS_PENDING = "pending"
 ORDER_STATUS_PREPARING = "preparing"
 ORDER_STATUS_READY = "ready"
 ORDER_STATUS_COMPLETED = "completed"
@@ -21,7 +24,6 @@ ORDER_STATUS_CANCELLED = "cancelled"
 ORDER_TYPE_DELIVERY = "delivery"
 ORDER_TYPE_TAKEAWAY = "takeaway"
 ORDER_TYPE_TABLE = "table"
-}
 
 user_roles = db.Table(
     "user_roles",
@@ -45,13 +47,9 @@ class Tenant(TimestampMixin, db.Model):
     users = db.relationship("User", back_populates="tenant", lazy="select")
     categories = db.relationship("Category", back_populates="tenant", lazy="select", cascade="all, delete-orphan")
     products = db.relationship("Product", back_populates="tenant", lazy="select", cascade="all, delete-orphan")
+    # Se habilita en la Fase 2.2, Iteración 1, cuando creemos el modelo Order.
+    # orders = db.relationship("Order", back_populates="tenant", lazy="select", cascade="all, delete-orphan")
 
-    orders = db.relationship(
-    "Order",
-    back_populates="tenant",
-    lazy="select",
-    cascade="all, delete-orphan",
-)
 
 class Role(db.Model):
     __tablename__ = "roles"
